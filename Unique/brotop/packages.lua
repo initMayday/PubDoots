@@ -17,7 +17,7 @@ local Configuration = {
             "brightnessctl",
             "tlp", "tlp-rdw",
             "wireless-regdb", --> Set wireless to UK
-            "fprintd", --> Fingerprint
+            "fprintd",        --> Fingerprint
             "booster",
 
             --> Audio
@@ -57,11 +57,11 @@ local Configuration = {
             "wl-clipboard",
             "system-config-printer",
             "pacman-contrib", --> Required for pactree
-            "fd", --> Alternative to find
+            "fd",             --> Alternative to find
             "7zip",
-            "ripgrep", --> Recursive grep
-            "zoxide", --> CD replacement
-            "eza", --> LS replacement
+            "ripgrep",        --> Recursive grep
+            "zoxide",         --> CD replacement
+            "eza",            --> LS replacement
 
             --> Filesystems
             "exfatprogs",
@@ -77,7 +77,7 @@ local Configuration = {
             "neovim", "npm", "unzip", --> npm is required for BashLS, Unzip is required for Clangd
             "yazi",
             "kitty",
-            "xdg-desktop-portal-hyprland","hyprland", "hyprpaper", "uwsm",
+            "xdg-desktop-portal-hyprland", "hyprland", "hyprpaper", "uwsm",
             "grim", "slurp", "satty",
             "signal-desktop",
             "mpv",
@@ -86,17 +86,17 @@ local Configuration = {
             "udisks2", --> For mounting & umounting drivers as user
             "man-db",
             "obs-studio",
-            "go", --> For yay
-            "tealdeer", --> Shorter manpages via tldr
+            "go",        --> For yay
+            "tealdeer",  --> Shorter manpages via tldr
             "playerctl", --> Issue playback commands to media playing
-            "wev", --> Check keysyms of keys
+            "wev",       --> Check keysyms of keys
             "krita",
             "network-manager-applet",
             "distrobox", "podman",
             "libreoffice-fresh",
             "quickshell",
 
-            --> Chaotic AUR 
+            --> Chaotic AUR
             "yay",
             "epson-inkjet-printer-escpr",
             "brave-bin",
@@ -107,32 +107,28 @@ local Configuration = {
         },
 
         Custom = {
-
-            --[[
             {
-                Base = "",
-                Sub = {},
-                RPC = true,
-                VersionCmd = "",
-                UpdateRemoteCmd = "",
-                PrepareCmd = "",
-                CloneCmd = "",
-                BuildCmd = "",
-            },]]
-	        "sherlock-launcher-bin",
-	        { Base = "Rust-VPN-Handler", Sub = {"vpn-handler-git"}, CloneCmd = "git clone https://github.com/initMayday/Rust-VPN-Handler"},
+                Base = "sherlock-launcher",
+                Sub = { "sherlock-launcher-bin" },
+                CloneCmd = "git clone https://aur.archlinux.org/sherlock-launcher.git"
+            },
+            {
+                Base = "Rust-VPN-Handler",
+                Sub = { "vpn-handler-git" },
+                CloneCmd = "git clone https://github.com/initMayday/Rust-VPN-Handler"
+            },
         },
 
         Ignore = {},
 
         Settings = {
-            CustomLocation = os.getenv("ST_HOME").. "/.aur/",
+            CustomLocation = os.getenv("ST_HOME") .. "/.aur/",
         },
     },
 
     Flatpak = {
         Primary = {
-	        "com.rtosta.zapzap",
+            "com.rtosta.zapzap",
         },
 
         Ignore = {},
@@ -147,11 +143,11 @@ local Configuration = {
     },
 
     Settings = {
-        WarnOnPackageRemovalAbove = 5;
-        SuperuserCommand = "sudo";
-        AddPathConfirmation = true;
-        RemovePathConfirmation = true;
-        Cores = {"Pacman", "Flatpak"}
+        WarnOnPackageRemovalAbove = 5,
+        SuperuserCommand = "sudo",
+        AddPathConfirmation = true,
+        RemovePathConfirmation = true,
+        Cores = { "Pacman", "Flatpak" }
     }
 }
 

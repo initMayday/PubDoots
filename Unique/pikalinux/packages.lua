@@ -127,8 +127,16 @@ local Configuration = {
 
         Custom = {
             "adwsteamgtk",
-            "sherlock-launcher-bin",
-            { Base = "Rust-VPN-Handler", Sub = { "vpn-handler-git" }, CloneCmd = "git clone https://github.com/initMayday/Rust-VPN-Handler" },
+            {
+                Base = "sherlock-launcher",
+                Sub = { "sherlock-launcher-bin" },
+                CloneCmd = "git clone https://aur.archlinux.org/sherlock-launcher.git"
+            },
+            {
+                Base = "Rust-VPN-Handler",
+                Sub = { "vpn-handler-git" },
+                CloneCmd = "git clone https://github.com/initMayday/Rust-VPN-Handler"
+            },
         },
 
         Ignore = {},
