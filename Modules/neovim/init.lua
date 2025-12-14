@@ -27,6 +27,8 @@ local custom = {
         format_code = "<A-o>",
         comment_code = "<A-r>",
 
+        live_grep = "<A-b>",
+
         toggle_tree = "<A-w>",
         toggle_terminal = "<A-d>",
         toggle_md_preview = "<A-l>",
@@ -218,6 +220,20 @@ require("lazy").setup({
                 "nixfmt",
             }
         }
+    },
+
+    --> Fuzzy Finding
+    {
+        "nvim-telescope/telescope.nvim",
+        tag = "v0.2.0",
+        dependencies = { "nvim-lua/plenary.nvim" },
+
+        config = function()
+            require("telescope").setup({})
+            local builtin = require("telescope.builtin")
+
+            vim.keymap.set("n", kb.live_grep, builtin.live_grep)
+        end,
     },
 
     --> Better Syntax Highlighting, works in conjunction with LSPs
