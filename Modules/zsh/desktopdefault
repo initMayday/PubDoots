@@ -1,0 +1,8 @@
+ZDIR="${${(%):-%N}:A:h}"
+source "$ZDIR/misc.sh"
+source "$ZDIR/settings.sh"
+source "$ZDIR/aliases.sh"
+source "$ZDIR/packaging.sh"
+source "$ZDIR/plugins.sh"
+source "$ZDIR/hyprland.sh"
+

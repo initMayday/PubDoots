@@ -1,0 +1,16 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/devicea
+
+# /dev/nvme0n1p2 decrypted
+/dev/mapper/decryptdevice / ext4 rw,relatime	0 1
+
+# /dev/nvme0n1p1
+/dev/nvme0n1p1 /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+/swapfile none swap defaults,nofail 0 0
+
+# Small SSD 128gigs
+/dev/mapper/auxdevice /home/pika/Documents btrfs rw,relatime,nofail 0 2
