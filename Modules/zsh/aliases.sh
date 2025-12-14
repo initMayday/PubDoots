@@ -2,9 +2,10 @@
 alias rm='rm -I'
 alias grep='grep --color=auto'
 alias build-config="$ST_HOME/Software/declarages/local-run.sh $ST_CONFIG/PubDoots/Unique/$HOSTNAME/packages.lua && lua $ST_HOME/Software/symlink-manager/main.lua $ST_CONFIG/PubDoots/symlinks.lua"
-alias edit="cd $ST_CONFIG"
-alias editmo="cd $ST_CONFIG/PubDoots/Modules"
-alias edituo="cd $ST_CONFIG/PubDoots/Unique/$HOSTNAME"
+alias edit="cd $ST_CONFIG/PubDoots"
+alias editm="cd $ST_CONFIG/PubDoots/Modules"
+alias editu="cd $ST_CONFIG/PubDoots/Unique/$HOSTNAME"
+alias editc="cd $ST_CONFIG/PrivDoots"
 alias editmc="cd $ST_CONFIG/PrivDoots/Modules"
 alias edituc="cd $ST_CONFIG/PrivDoots/Unique/$HOSTNAME"
 alias vim="nvim"
