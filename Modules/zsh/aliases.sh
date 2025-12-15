@@ -1,7 +1,7 @@
 # Aliases
 alias rm='rm -I'
 alias grep='grep --color=auto'
-alias build-config="$ST_HOME/Software/declarages/local-run.sh $ST_CONFIG/PubDoots/Unique/$HOSTNAME/packages.lua && lua $ST_HOME/Software/desym/main.lua $ST_CONFIG/PubDoots/symlinks.lua"
+alias build-config="$ST_HOME/Software/declarages/local-run.sh $ST_CONFIG/PubDoots/packages.lua && lua $ST_HOME/Software/desym/main.lua $ST_CONFIG/PubDoots/symlinks.lua"
 alias edit="cd $ST_CONFIG/PubDoots"
 alias editm="cd $ST_CONFIG/PubDoots/Modules"
 alias editu="cd $ST_CONFIG/PubDoots/Unique/$HOSTNAME"

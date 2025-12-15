@@ -1,4 +1,4 @@
-local Configuration = {
+return {
     Pacman = {
         Primary = {
             --> Base
@@ -142,13 +142,5 @@ local Configuration = {
         Ignore = { "home-manager-path" },
     },
 
-    Settings = {
-        WarnOnPackageRemovalAbove = 5,
-        SuperuserCommand = "sudo",
-        AddPathConfirmation = true,
-        RemovePathConfirmation = true,
-        Cores = { "Pacman", "Flatpak" }
-    }
+    Settings = { Cores = { "Pacman", "Flatpak" } }
 }
-
-return Configuration;
