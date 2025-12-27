@@ -114,7 +114,6 @@ return {
             "qutebrowser",
             "gamescope",
             "quickshell",
-            "layer-shell-qt", --> For maypaper
 
             --> Chaotic AUR
             "yay",
@@ -128,9 +127,15 @@ return {
 
         Custom = {
             "adwsteamgtk",
+
+            {
+                Base = "maypaper",
+                Sub = { "maypaper" },
+                RPC = false,
+            },
             {
                 Base = "wayfreeze-git",
-                Sub = "wayfreeze",
+                Sub = { "wayfreeze-git" },
                 RPC = false,
             },
             {
