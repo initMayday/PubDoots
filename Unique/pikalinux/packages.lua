@@ -114,6 +114,7 @@ return {
             "qutebrowser",
             "gamescope",
             "quickshell",
+            "layer-shell-qt", --> For maypaper
 
             --> Chaotic AUR
             "yay",
@@ -127,6 +128,11 @@ return {
 
         Custom = {
             "adwsteamgtk",
+            {
+                Base = "wayfreeze-git",
+                Sub = "wayfreeze",
+                RPC = false,
+            },
             {
                 Base = "sherlock-launcher",
                 Sub = { "sherlock-launcher-bin" },

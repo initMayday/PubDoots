@@ -181,6 +181,8 @@ require("lazy").setup({
                 "jdtls",
                 "marksman",
                 "nil_ls",
+                "html",
+                "cssls",
             }
 
             local sole_lsps = {}
