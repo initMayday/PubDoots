@@ -115,6 +115,7 @@ return {
             "gamescope",
             "quickshell",
             "firejail",
+            "openai-codex",
 
             --> Chaotic AUR
             "yay",
@@ -161,7 +162,6 @@ return {
     Flatpak = {
         Primary = {
             "com.rtosta.zapzap",
-            "org.kicad.KiCad",
         },
 
         Ignore = {},
