@@ -114,6 +114,7 @@ return {
             "qutebrowser",
             "gamescope",
             "quickshell",
+            "firejail",
 
             --> Chaotic AUR
             "yay",

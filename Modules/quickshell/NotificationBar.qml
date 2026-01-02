@@ -13,7 +13,7 @@ import "widgets" as Widgets
 Item {
     id: root
     required property string screen
-    height: Singletons.Globals.notifBarTime != 0 && Singletons.Globals.expanded == false && screen == Hyprland.focusedMonitor.name ? interiorItem.height + 40 : 0
+    height: Singletons.Globals.notifBarTime != 0 && Singletons.Globals.doNotDisturb == false && Singletons.Globals.expanded == false && screen == Hyprland.focusedMonitor.name ? interiorItem.height + 40 : 0
 
     MouseArea {
         anchors.fill: parent

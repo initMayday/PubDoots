@@ -202,18 +202,19 @@ Rectangle {
                 RowLayout {
                     spacing: 10
                     anchors.fill: parent
-                    Rectangle {
+                    Components.Button {
+                        id: doNotDisturb
                         Layout.preferredHeight: parent.height
                         Layout.preferredWidth: parent.height
-                        color: Singletons.Globals.primaryColor
+                        color: Singletons.Globals.doNotDisturb ? Singletons.Globals.backgroundColor : Singletons.Globals.primaryColor
                         radius: height
                     }
 
-                    Rectangle {
-                        Layout.preferredHeight: parent.height
-                        Layout.preferredWidth: parent.height
-                        color: Singletons.Globals.primaryColor
-                        radius: height
+                    Connections {
+                        target: doNotDisturb
+                        function onClicked() {
+                            Singletons.Globals.doNotDisturb = !Singletons.Globals.doNotDisturb;
+                        }
                     }
 
                     Item {

@@ -10,6 +10,7 @@ Singleton {
 
     property bool expanded: false
     property int notifBarTime: 0
+    property bool doNotDisturb: false
 
     function readFile(fileUrl, callback) {
         var xhr = new XMLHttpRequest();
