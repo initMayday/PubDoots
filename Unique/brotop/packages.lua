@@ -92,8 +92,7 @@ return {
             "wev",       --> Check keysyms of keys
             "krita",
             "network-manager-applet",
-            "distrobox", "podman",
-            "libreoffice-fresh",
+            "libreoffice-fresh", "hunspell-en_gb", "mythes-en",
             "quickshell",
 
             --> Chaotic AUR
@@ -107,6 +106,17 @@ return {
         },
 
         Custom = {
+
+            {
+                Base = "maypaper",
+                Sub = { "maypaper" },
+                RPC = false,
+            },
+            {
+                Base = "wayfreeze-git",
+                Sub = { "wayfreeze-git" },
+                RPC = false,
+            },
             {
                 Base = "sherlock-launcher",
                 Sub = { "sherlock-launcher-bin" },
