@@ -56,7 +56,6 @@ return {
             "ttf-cascadia-code", "noto-fonts", "noto-fonts-emoji",
             "wl-clipboard",
             "system-config-printer",
-            "pacman-contrib", --> Required for pactree
             "fd",             --> Alternative to find
             "7zip",
             "ripgrep",        --> Recursive grep
@@ -74,7 +73,6 @@ return {
             --> Development
             "rustup",
             "meson",
-            "spdlog", --> Logging library in my programs
 
             --> Apps
             "fastfetch",
@@ -104,18 +102,15 @@ return {
             "virt-manager", "virt-viewer",
             "obs-studio",
             "go",            --> For yay
-            "smartmontools", --> Disk checking
-            "tealdeer",      --> Shorter manpages via tldr
             "playerctl",     --> Issue playback commands to media playing
             "wev",           --> Check keysyms of keys
-            "asciinema",     --> Record terminal session
             "krita",
             "nwg-look",
-            "qutebrowser",
             "gamescope",
             "quickshell",
             "firejail",
             "openai-codex",
+            "vulkan-validation-layers",
 
             --> Chaotic AUR
             "yay",
@@ -162,6 +157,8 @@ return {
     Flatpak = {
         Primary = {
             "com.rtosta.zapzap",
+            "org.vinegarhq.Sober",
+            "org.vinegarhq.Vinegar",
         },
 
         Ignore = {},
